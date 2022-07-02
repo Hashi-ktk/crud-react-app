@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { React } from "react";
+import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -38,7 +39,7 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-        <button className="btn btn-outline-light w-2">Add Users</button>
+        <Link className="btn btn-outline-dark w-2" to="/user/add">Add Users</Link>
       </div>
     </nav>
   );
